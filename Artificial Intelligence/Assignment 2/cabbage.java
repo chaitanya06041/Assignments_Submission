@@ -13,6 +13,7 @@ public class cabbage {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to the Wolf, Goat, and Cabbage game!");
+        System.out.println();
         displayState();
 
         while (!isGameWon()) {
@@ -89,8 +90,17 @@ public class cabbage {
     }
 
     private static void displayState() {
-        System.out.println("Left Side: " + leftSide);
-        System.out.println("Right Side: " + rightSide);
+        // System.out.println("Left Side: " + leftSide);
+        // System.out.println("Right Side: " + rightSide);
+        System.out.print("Left Side: ");
+        for(String s: leftSide){
+            System.out.print(s+", ");
+        }
+        System.out.print("  |  Right Side:  ");
+        for(String s: rightSide){
+            System.out.print(s+", ");
+        }
+        System.out.println();
         System.out.println("Farmer is on the " + farmerSide + " side.");
     }
 
