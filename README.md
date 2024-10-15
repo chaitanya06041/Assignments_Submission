@@ -1,1 +1,1 @@
-# Assignments_Submission
+AI and DL Lab assignments
